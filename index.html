@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бюджет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body> 
+
+<div class="container">
+    <h1>Плануємо сімейний бюджет на місяць</h1>
+
+    <h2>Доходи за місяць в грн.</h2>
+    <input class="input-income" placeholder="Введіть сумму доходів за місяць...">
+
+    <h2>План витрат на місяць в грн.</h2>
+    <span>Оберіть метод розрахунку:</span>
+
+    <div class="methods">
+    <div class=" box">    
+    <button class="btn-first">Традиційна формула 60 на 40</button>
+    <div class="method-first">
+        <div class="line">
+            <select class="select-first-60">
+            <option disabled selected value="0.6">ПОТОЧНІ ВИТРАТИ - 60%</option>
+            <option disabled>Комунальні платежі та оренда житла</option>
+            <option disabled>Витрати на продукти харчування</option>
+            <option disabled>Щоденні обовязкові витрати(транспорт, кишенькові дітям тощо)</option>
+            <option disabled>Краса та медицина(те, що можна спланувати)</option>
+            <option disabled>Витрати на одяг та взуття</option>
+            <option disabled>Витрати на підтримку ЗОЖ(спортклуби, басейн тощо)</option>
+            <option disabled>Витрати на розвиток та освіту дитини</option>
+            <option disabled>Оплата кредитів</option>
+            <option disabled >Підтримка батьків або родичів</option>   
+            </select>
+            <p class="first-60 show-result"></p>
+        </div>
+        <div class="line">
+            <p>ЗАОЩАДЖЕННЯ - 10%</p>
+            <p class="first-10-1 show-result"></p>
+        </div>
+        <div class="line">
+            <p>ЦІЛІ ТА МРІЇ - 10%</p>
+            <p class="first-10-2 show-result"></p>
+        </div>
+        <div class="line">
+            <p>НЕПЕРЕДБАЧЕНІ ВИТРАТИ - 10%</p>
+            <p class="first-10-3 show-result"></p>
+        </div>
+        <div class="line">
+            <p>ПОДОРОЖІ ТА РОЗВАГИ - 10%</p>
+            <p class="first-10-4 show-result"></p>
+        </div>
+    </div>
+    <p class="method"><span>Переваги методу:</span><br>
+        простий та зрозумілий;<br>
+        передбачає відкладення коштів на важливі витрати;<br>
+        <span>Недоліки методу:</span><br>
+        не підходить сім’ям, які ведуть окремий бюджет;<br>
+        не підійде тим, хто має великі обов’язкові витрати.
+        </p>
+</div>
+
+    <div class="box">
+    <button class="btn-second">Метод 4 конвертів</button>
+    <div class="method-second">
+        <div class="line">
+            <select>
+            <option disabled selected>ОБОВЯЗКОВІ ПЛАТЕЖІ 40%</option>
+            <option disabled>Комунальні платежі та оренда житла</option>
+            <option disabled>Щоденні обовязкові витрати(транспорт, кишенькові дітям тощо)</option>
+            <option disabled>Витрати на розвиток та освіту дитини</option>
+            <option disabled>Оплата кредитів</option> 
+            <option disabled>Тощо</option>
+            </select>
+            <p class="second-40 show-result"></p>
+        </div>
+        <div class="line">
+            <p>НАКОПИЧЕННЯ - 20%</p>
+            <p class="second-20 show-result"></p>
+        </div>    
+        <div class="line">
+            <p>КОНВЕРТ на 1-й тиждень</p>
+            <p class="second-at4-1 show-result"></p>
+        </div>
+        <div class="line">
+            <p>КОНВЕРТ на 2-й тиждень</p>
+            <p class="second-at4-2 show-result"></p>
+        </div>
+        <div class="line">
+            <p>КОНВЕРТ на 3-й тиждень</p>
+            <p class="second-at4-3 show-result"></p>
+        </div>
+        <div class="line">
+            <p>КОНВЕРТ на 4-й тиждень</p>
+            <p class="second-at4-4 show-result"></p>
+        </div>
+    </div>
+    <p class="method"><span>Переваги методу:</span><br>
+        передбачає формування накопичень та резервів, 
+        що важливо для фінансової стабільності;<br>
+        обов’язкова сплата постійних витрат дозволяє уникати виникнення боргів;<br>
+        можливість здійснювати незаплановані витрати за умови економії.<br>
+        <span>Недоліки методу:</span><br>
+        не має чіткого розподілу відкладених коштів на накопичення та резерв.
+    </p>
+    </div>
+
+    <div class="box">
+    <button class="btn-third">Правило 50/30/20</button>
+    <div class="method-third">
+        <div class="line">  
+            <select class="select-third-50">
+            <option disabled selected value="0.5">ОБОВЯЗКОВІ ВИТРАТИ - 50%</option>
+            <option disabled>Комунальні платежі та оренда житла</option>
+            <option disabled>Витрати на продукти харчування</option>
+            <option disabled>Оплата кредитів</option>
+            <option disabled>Тощо</option>   
+            </select>
+            <p class="third-50 show-result"></p>
+        </div>
+        <div class="line">
+            <select class="select-third-30">
+            <option disabled selected value="0.3">БАЖАНІ, АЛЕ НЕ ОБОВЯЗКОВІ ВИТРАТИ - 30%</option>
+            <option disabled>Витрати на одяг</option>
+            <option disabled>Витрати на розваги</option>
+            <option disabled>Витрати на харчуванн у кафе</option>
+            <option disabled>Тощо</option>   
+            </select>
+            <p class="third-30 show-result"></p>
+        </div>
+        <div class="line">
+            <p>СТВОРЕННЯ ФІНАНСОВИХ АКТИВІВ НА НЕПЕРЕДБАЧЕНІ ВИТРАТИ - 20%</p>
+            <p class="third-20 show-result"></p>
+        </div>
+    </div>
+    <p class="method"><span>Переваги методу:</span><br>
+        простий і зрозумілий;<br>
+        дозволяє позначити суму, яку можна «розтратити»;<br>
+        дозволяє регулярно виділяти кошти створення особистих фінансових активів.<br>
+        <span>Недоліки методу:</span><br>
+        може виникнути різне бачення, що віднести до обов’язкових 
+        та необов’язкових витрат;<br>
+        не підійде тим, хто має нестабільні доходи;<br>
+        не підійде тим, хто має великі обов’язкові витрати.
+    </p>
+    </div>
+    </div>
+
+    
+</div> 
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>

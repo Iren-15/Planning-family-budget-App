@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(98, 96, 99);
+    background-image: url(photo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.methods {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.method {
+    width: 400px;
+    color: green;
+    background-color:rgb(162, 156, 156);
+    border-radius: 3px;
+}
+
+span {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    color: #fff;
+}
+
+h1, h2 {
+    color: green;
+    background-color: rgba(252, 251, 251, 0.5);
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    width: 680px;
+    font-size: 40px;
+}
+
+h2 {
+    width: 350px;
+}
+
+p, select, input, button {
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+p {
+    background-color:#fff;
+    width: 400px;
+    font-size: 15px;
+}
+
+select {
+    width: 420px;
+    font-size: 15px;
+}
+
+input {
+    width: 300px;
+    font-size: 20px;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(117, 196, 117);
+    cursor: pointer;
+}
+
+.colorSelect {
+    background-color: rgb(117, 196, 117);
+    color:rgb(4, 88, 4);
+}
+
+.line {
+    display: flex;
+}
+
+.show-result {
+    width: 100px;
+}
+
+.method-first, .method-second, .method-third {
+    display: none;
+}
+
+@media all and (max-width: 820px) {
+.methods {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: 60vh;
+    font-size: 35px;
+}
+
+
+.box {
+    margin-bottom: 30px;
+}
+}
+
+
+@media all and (max-width: 500px) {
+    
+    h1 {
+        width: 50vh;
+        font-size: 30px;
+    }
+    
+p {
+    width: 300px;
+}
+
+select {
+    width: 320px;
+}
+
+.show-result {
+    width: 60px;
+}
+
+.method {
+    width: 300px;
+}
+}
